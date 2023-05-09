@@ -20,7 +20,7 @@ void loop() {
   SN = EX;
   Val = analogRead(A0);
   Cou = analogRead(A1);
-  AZ = (Val / 2.8764) + (Cou / 256);
+  AZ = (Val / 2.8845) + (Cou / 204.8);
   AZ = (AZ > 360.0) ? 360.0 : AZ;
   SN.replace("%a", String(AZ, 1));
   SN.replace("%b", String(Val));
